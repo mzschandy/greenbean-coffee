@@ -1,2 +1,2 @@
-# greenhouse-coffee
+# greenbean-coffee
 Repository for website built for DIG3588C Digital Portfolio
