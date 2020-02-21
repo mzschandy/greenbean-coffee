@@ -17,6 +17,7 @@ body {
   justify-content: center;
   text-align: center;
   text-decoration: none;
+  padding-left: 1.9rem;
 }
 .nav .shopping {
   display: flex;
@@ -72,6 +73,24 @@ body {
 
 .content {
   margin: 50px 350px;
+}
+
+.image-grid {
+  margin: 10px 150px;
+}
+.image-grid .row {
+  display: flex;
+  padding: 0 4px;
+}
+.image-grid .column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+.image-grid .column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
