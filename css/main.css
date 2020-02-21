@@ -1,0 +1,77 @@
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+.nav i {
+  font-size: 36px;
+  align-self: center;
+  cursor: pointer;
+}
+.nav .center-logo {
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+}
+.nav .shopping {
+  display: flex;
+  align-self: center;
+}
+.nav .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+}
+
+.overlay {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+.overlay .overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.content {
+  margin: 50px 350px;
+}
+
+/*# sourceMappingURL=main.css.map */

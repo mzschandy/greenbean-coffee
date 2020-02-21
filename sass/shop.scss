@@ -1,0 +1,32 @@
+.shop-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .grid-item {
+    flex: 100px / 3px;
+
+    &:hover {
+      background-color: #6d644e;
+    }
+
+    img {
+      width: 300px;
+      margin: 50px
+    }
+
+    .detail {
+      margin-top: -70px;
+      padding-bottom: 15px;
+
+      .addCart {
+        margin-top: 10px;
+        background-color: #000;
+        color: #fff;
+        border: none;
+        outline: none;
+        cursor: pointer;
+      }
+    }
+  }
+}

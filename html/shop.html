@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Greenbean Coffee</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="/css/shop.css">
+</head>
+
+<body>
+  <!-- overlay menu -->
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="about.html">About</a>
+      <a href="shop.html">Shop</a>
+      <a href="menu.html">Menu</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </div>
+
+  <!-- Nav bar -->
+  <div class="nav">
+    <i onclick="openNav()" class="material-icons" style="">menu</i>
+    <h3 class="center-logo">
+      <a href="index.html">
+        <img class="greenhouse" src="/img/GB_logoWhite.png" style="width: 150px">
+      </a>
+    </h3>
+    <div class="shopping" style="">
+      <i class="material-icons" style="">shopping_cart</i>
+      <div class="circle" style="">
+        <div id="cartNumber" class="number">0</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content" style="text-align: center">
+    <h1>Shop</h1>
+    <div class="shop-grid" style="">
+      <div class="grid-item" style="">
+        <img src="/img/Bag.png" style="">
+        <div class="detail">
+          <div>Jamaica</div>
+          <button class="addCart" onclick="addtoCart()">/ Add to Cart /</button>
+        </div>
+      </div>
+      <div class="grid-item" style="">
+        <img src="/img/Bag1.png" style="">
+        <div class="detail">
+          <div>Kenya</div>
+          <button class="addCart" onclick="addtoCart()">/ Add to Cart /</button>
+        </div>
+      </div>
+      <div class="grid-item" style="">
+        <img src="/img/Bag3.png" style="">
+        <div class="detail">
+          <div>Colombia</div>
+          <button class="addCart" onclick="addtoCart()">/ Add to Cart /</button>
+        </div>
+      </div>
+      <div class="grid-item" style="">
+        <img src="/img/Bag4.png" style="">
+        <div class="detail">
+          <div>Brazil</div>
+          <button class="addCart" onclick="addtoCart()">/ Add to Cart /</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+      }
+      /* Close */
+      function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+      }
+    </script>
+    <script>
+      var items = 0;
+
+      function addtoCart() {
+        var cart;
+        cart = document.getElementById("cartNumber");
+        items++;
+        cart.innerHTML = items;
+        console.log(items);
+      }
+    </script>
+  </div>
+</body></html>
