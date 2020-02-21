@@ -1,0 +1,29 @@
+.content {
+  margin: 50px 350px;
+
+  input {
+    width: 100%;
+    background-color: #000;
+    color: white;
+    border: 2px solid #fff;
+    padding: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    background-color: #000;
+    color: white;
+    border: 2px solid #fff;
+    padding: 10px;
+  }
+
+  .formInput {
+    margin: 20px;
+  }
+
+  input[type="submit"] {
+    width: 25%;
+    cursor: pointer;
+  }
+
+}

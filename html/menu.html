@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Greenbean Coffee</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="/css/menu.css">
+</head>
+
+<body>
+  <!-- overlay menu -->
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="about.html">About</a>
+      <a href="shop.html">Shop</a>
+      <a href="menu.html">Menu</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <!-- Nav bar -->
+  <div class="nav">
+    <i onclick="openNav()" class="material-icons" style="">menu</i>
+    <h3 class="center-logo">
+      <a href="index.html">
+        <img class="greenhouse" src="/img/GB_logoWhite.png" style="width: 150px">
+      </a>
+    </h3>
+    <div class="shopping" style="">
+      <i class="material-icons" style="">shopping_cart</i>
+      <div class="circle" style="">
+        <div class="number">0</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content" style="text-align: center">
+    <h1>Coffee Menu</h1>
+    <div class="menu-tabs">
+      <button id="open" class="tab" onclick="menu(event, 'hot-drinks')">Hot Drinks</button>
+      <button class="tab" onclick="menu(event, 'cold-drinks')">Cold Drinks</button>
+      <button class="tab" onclick="menu(event, 'at-home')">At Home</button>
+    </div>
+
+    <!-- Tab content -->
+    <div id="hot-drinks" class="menu-content">
+      <div class="menu-item">
+        <div class="name">Americano</div>
+        <div class="price">$2.95</div>
+      </div>
+      <div class="menu-item">
+        <div class="name">Cappucino</div>
+        <div class="price">$3.49</div>
+      </div>
+      <div class="menu-item">
+        <div class="name">Espresso</div>
+        <div class="price">$2.95</div>
+      </div>
+      <div class="menu-item">
+        <div class="name">Vanilla Latte</div>
+        <div class="price">$3.49</div>
+      </div>
+
+    </div>
+    <div id="cold-drinks" class="menu-content">
+      <div class="menu-item">
+        <div class="name">Cafe Mocha</div>
+        <div class="price">$3.95</div>
+      </div>
+      <div class="menu-item">
+        <div class="name">Iced Coffee</div>
+        <div class="price">$3.95</div>
+      </div>
+      <div class="menu-item">
+        <div class="name">Iced Latte</div>
+        <div class="price">$3.95</div>
+      </div>
+      <div class="menu-item">
+        <div class="name">Iced White Mocha</div>
+        <div class="price">$3.95</div>
+      </div>
+      <div class="menu-item">
+        <div class="name">Iced Macchiato</div>
+        <div class="price">$3.95</div>
+      </div>
+    </div>
+    <div id="at-home" class="menu-content">
+      <div class="menu-item">
+
+      </div>
+      <div class="menu-item">
+        <div class="name">Bag of Ground Beans</div>
+        <div class="price">$3.95</div>
+      </div>
+      <div class="menu-item">
+        <div class="name">Bag of Ground Beans</div>
+        <div class="price">$3.95</div>
+      </div>
+    </div>
+
+    <script>
+      function menu(event, menuTab) {
+        var i, menuContent, menuLinks;
+
+        menuContent = document.getElementsByClassName("menu-content");
+        for (i = 0; i < menuContent.length; i++) {
+          menuContent[i].style.display = "none";
+        }
+
+        menuLinks = document.getElementsByClassName("tab");
+        for (i = 0; i < menuLinks.length; i++) {
+          menuLinks[i].className = menuLinks[i].className.replace(" active", "");
+        }
+
+        document.getElementById(menuTab).style.display = "block";
+        event.currentTarget.className += " active";
+      }
+
+      document.getElementById("open").click();
+    </script>
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+      }
+      /* Close */
+      function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+      }
+    </script>
+  </div>
+</body></html>
