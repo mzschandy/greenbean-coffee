@@ -1,10 +1,14 @@
+.content {
+  margin: auto;
+}
+
 .shop-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 .shop-grid .grid-item {
-  flex: 100px/3px;
+  flex-basis: 33%;
 }
 .shop-grid .grid-item:hover {
   background-color: #6d644e;
