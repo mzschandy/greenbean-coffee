@@ -1,6 +1,15 @@
 body {
   background-color: #000;
   color: #fff;
+
+  h1,
+  label {
+    font-family: costa, sans-serif;
+    text-transform: uppercase;
+  }
+
+  font-family: sans-serif;
+
 }
 
 .nav {
@@ -49,6 +58,9 @@ body {
   background-color: rgba(0, 0, 0, 0.9);
   overflow-y: hidden;
   transition: 0.5s;
+  font-family: costa, sans-serif;
+  color: #fff;
+  font-weight: 700;
 
   .overlay-content {
     position: relative;
@@ -102,6 +114,35 @@ body {
       margin-top: 8px;
       vertical-align: middle;
       width: 100%;
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0;
+  margin-top: 50px;
+  justify-content: space-around;
+  align-items: center;
+  //border-top: 1px solid #fff;
+
+  img {
+    padding-right: 4rem;
+  }
+
+  input[name="newsletter"] {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #fff;
+    width: 100%;
+  }
+
+  .social {
+    i {
+      padding: 0 20px 0 20px;
+      cursor: pointer;
     }
   }
 }

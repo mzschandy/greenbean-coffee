@@ -1,6 +1,12 @@
 body {
   background-color: #000;
   color: #fff;
+  font-family: sans-serif;
+}
+body h1,
+body label {
+  font-family: costa, sans-serif;
+  text-transform: uppercase;
 }
 
 .nav {
@@ -45,6 +51,9 @@ body {
   background-color: rgba(0, 0, 0, 0.9);
   overflow-y: hidden;
   transition: 0.5s;
+  font-family: costa, sans-serif;
+  color: #fff;
+  font-weight: 700;
 }
 .overlay .overlay-content {
   position: relative;
@@ -91,6 +100,29 @@ body {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0;
+  margin-top: 50px;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer img {
+  padding-right: 4rem;
+}
+.footer input[name=newsletter] {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  border: 1px solid #fff;
+  width: 100%;
+}
+.footer .social i {
+  padding: 0 20px 0 20px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */
