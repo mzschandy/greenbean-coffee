@@ -25,11 +25,15 @@
 
       .addCart {
         margin-top: 10px;
-        background-color: #000;
+        //background-color: #000;
         color: #fff;
         border: none;
         outline: none;
         cursor: pointer;
+
+        &:hover {
+          background-color: #6d644e;
+        }
       }
     }
   }

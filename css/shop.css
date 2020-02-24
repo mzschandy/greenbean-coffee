@@ -23,11 +23,13 @@
 }
 .shop-grid .grid-item .detail .addCart {
   margin-top: 10px;
-  background-color: #000;
   color: #fff;
   border: none;
   outline: none;
   cursor: pointer;
+}
+.shop-grid .grid-item .detail .addCart:hover {
+  background-color: #6d644e;
 }
 
 /*# sourceMappingURL=shop.css.map */
