@@ -1,0 +1,45 @@
+
+
+.headerInner {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 214px;
+
+    .mainNav {
+        margin-top: 57px;
+
+        & a {
+            color: $white;
+        }
+    }
+
+    .orderOnline {
+        margin-top: 57px;
+        height: min-content;
+        justify-content: flex-end;
+    }
+
+    &>div {
+        flex: 33%;
+        display: flex;
+
+        //justify-content: ;
+    }
+
+    .headerLogo {
+        justify-content: center;
+        
+        img {
+            margin-top: 38px;
+            width: 134px;
+            height: 135px;
+        }
+    }
+}
+
