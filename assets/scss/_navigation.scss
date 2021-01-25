@@ -1,4 +1,6 @@
-
+#header {
+    
+}
 
 .headerInner {
     position: fixed;
@@ -10,6 +12,7 @@
     display: flex;
     justify-content: space-between;
     height: 214px;
+    max-width: 1640px;
 
     .mainNav {
         margin-top: 57px;
@@ -25,7 +28,7 @@
         justify-content: flex-end;
     }
 
-    &>div {
+    &>* {
         flex: 33%;
         display: flex;
 
@@ -34,12 +37,179 @@
 
     .headerLogo {
         justify-content: center;
+        align-items: center;
         
         img {
-            margin-top: 38px;
+            //margin-top: 38px;
             width: 134px;
             height: 135px;
         }
     }
+
+    .menuBtn {
+        display: none;
+    };
 }
 
+
+#header.scroll {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    background-color: #363024;
+    height: 141px;
+    .headerInner {
+        
+        color: #F0F0F0;
+        height: 141px;
+        //background-color: #363024;
+    }
+    
+    .button {
+        //border: 1px solid #f0f0f0;
+        background-color: #363024;
+        border-color: #f0f0f0;
+    }
+
+    .headerLogo {
+        img {
+            margin-top: 0;
+            height: 87px;
+            width: 87px;
+        }
+    }
+}
+
+.overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 15;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,.9);
+    overflow-y: hidden;
+    transition: .5s;
+}
+
+.mobileNav {
+    position: relative;
+    width: 100%;
+    top: 15%;
+    font-size: 3rem;
+    color: #F0F0F0;
+    
+    transition: .3s;
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+    }
+
+    li {
+        display: flex;
+        justify-content: center;
+        padding: .2em 0;
+    }
+
+    .closeBtn {
+        position: absolute;
+        top: -80px;
+        right: 45px;
+        font-size: 60px;
+    }
+}
+
+/* Beyond Large ---------------------------------------------------*/
+@media screen and (min-width: 1441px) {}
+/* Large Desktop ---------------------------------------------------*/
+@media screen and (min-width: 1300px) and (max-width: 1440px) {}
+/* Medium Desktop ---------------------------------------------------*/
+@media screen and (min-width: 1140px) and (max-width: 1299px) {}
+/* Small Desktop ---------------------------------------------------*/
+@media screen and (min-width: 1025px) and (max-width: 1139px) {}
+//Tablet
+@media screen and (min-width: 750px) and (max-width:1024px) {
+    #header.scroll {
+    }
+    .mainNav > .menu {
+        display: none;
+    }
+    .headerInner .menuBtn {
+        display: block;
+    }
+    
+}
+//Phone
+@media screen and (max-width: 749px) {
+    .mainNav > .menu {
+        display: none;
+    }
+    .headerInner {
+        height: 60px;
+        .orderOnline, .mainNav {
+            margin-top: 0;
+        }
+        .headerLogo {
+            margin-top: 0;
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+        a.button {
+            font-size: .7em;
+            width: 100px;
+            display: none;
+        }
+
+        .menuBtn {
+        display: block;
+        }
+        .menuBtn {
+            font-size: 1.8em;
+            color: #F0F0F0;
+        }
+        .mainNav, .orderOnline {
+            align-self: center;
+            margin-left: 10px;
+        }
+        .mainNav > .menu {
+            margin-left: 10px;
+        }
+    }
+    #header.scroll {
+        height: 50px;
+        .headerInner {
+            margin-top: 0;
+            height: 50px;
+
+            .headerLogo {
+                //flex: auto;
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+        .menuBtn {
+            font-size: 1.8em;
+        }
+        .mainNav, .orderOnline {
+            align-self: center;
+            margin-left: 10px;
+        }
+        .mainNav > .menu {
+            margin-left: 10px;
+        }
+        a.button {
+            font-size: .6em;
+            width: 100px;
+            margin-bottom: 0;
+            margin-right: 10px;
+        }
+    }
+}

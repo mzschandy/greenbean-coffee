@@ -12,14 +12,14 @@
 }
 
 .homeHero {
-    //height: 943px;
-    height: 700px;
+    height: 943px;
+    //height: 700px;
 }
 
 #homepageSlideshow {
     position: relative;
-    //height: 943px;
-    height: 700px;
+    height: 943px;
+    //height: 700px;
 
 }
 
@@ -89,3 +89,144 @@
     visibility: visible; 
 }
 
+#aboutRibbon {
+    //background-color: red;
+    //height: 200px;
+}
+#menuRibbon {
+}
+.ribbon.half {
+    height: 869px;
+    .image {
+        background-image: url("/assets/static/coffee_cup.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        
+    }
+    .text {
+        display: flex;
+        align-items: center;
+    }
+    .textInner {
+        display: flex;
+        flex-direction: column;
+        padding: 6em;
+        //align-self: center;
+    }
+    .title {
+        font-size: 40px;
+        font-weight: 800;
+        margin-bottom: 2em;
+    }
+    .description {
+        margin-bottom: .5em;
+    }
+}
+.ribbon.carousel.half {
+    .image {
+        background-image: url("/assets/static/Bag3.png");
+        background-size: contain;
+       
+    }
+    .caption {
+        margin-top: -5em;
+        margin-bottom: 3em;
+    }
+    .price {
+        margin: 1em 0 2em 0;
+    }
+}
+.ribbon {
+    height: 869px;
+    .ribbonInner {
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        color: #f0f0f0;
+        max-width: 884px;
+
+        .text {
+            font-size: 40px;
+            font-weight: 650;
+            margin-bottom: 1em;
+            text-align: center;
+        }
+
+        .blurb {
+            margin-bottom: 1em;
+            text-align: center;
+            //padding: 0 1em;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+#menuRibbon .ribbon {
+    background-image: url("/assets/static/preparing_coffee.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#newsletter {
+    form {
+        display: flex;
+    }
+
+    input[type='text'] {
+        width: 368px;
+        margin-right: 1em;
+    }
+    .contactForm {
+        margin-top: 2em;
+    }
+    .ribbon {
+    height: 515px;
+
+    background-image: url("/assets/static/Background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+}
+@media screen and (max-width: 749px) {
+    #homepageSlideshow, .homeHero {
+        height: 550px;
+    }
+    .slide {
+        .content {
+            padding: 0;
+        }
+        .title {
+            font-size: 2.5em;
+        }
+        .subtitle {
+            font-size: 1.5em;
+        }
+        .description {
+            font-size: .8em;
+        }
+        .button {
+
+        }
+    }
+
+    .ribbon, .ribbon.half {
+        height: 300px;
+    }
+
+    .ribbon.half {
+        .image {
+            display: none;
+        }
+        .text {
+            width: 100%;
+        }
+    }
+}
