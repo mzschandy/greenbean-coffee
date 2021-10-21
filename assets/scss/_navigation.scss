@@ -13,6 +13,7 @@
     justify-content: space-between;
     height: 214px;
     max-width: 1640px;
+    transition: height .2s;
 
     .mainNav {
         margin-top: 57px;
@@ -26,6 +27,7 @@
         margin-top: 57px;
         height: min-content;
         justify-content: flex-end;
+        margin-right: 1em;
     }
 
     &>* {
@@ -59,12 +61,22 @@
     left: 0;
     z-index: 10;
     background-color: #363024;
-    height: 141px;
+    height: 100px;
     .headerInner {
         
         color: #F0F0F0;
-        height: 141px;
+        height: 100px;
         //background-color: #363024;
+
+        .mainNav {
+            margin-top: 0;
+            align-items: center;
+        }
+        .orderOnline {
+            margin-top: 1em;
+            align-items: center;
+            height: auto;
+        }
     }
     
     .button {
@@ -76,10 +88,11 @@
     .headerLogo {
         img {
             margin-top: 0;
-            height: 87px;
-            width: 87px;
+            height: 50px;
+            width: 50px;
         }
     }
+    
 }
 
 .overlay {

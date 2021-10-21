@@ -89,12 +89,6 @@
     visibility: visible; 
 }
 
-#aboutRibbon {
-    //background-color: red;
-    //height: 200px;
-}
-#menuRibbon {
-}
 .ribbon.half {
     height: 869px;
     .image {
@@ -173,6 +167,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 515px;
 }
 #newsletter {
     form {
@@ -217,15 +212,52 @@
         }
     }
 
-    .ribbon, .ribbon.half {
-        height: 300px;
+    #menuRibbon, #newsletter {
+        .ribbon.half, .ribbon {
+            height: 300px;
+
+            .text {
+                font-size: 16px;
+            }
+            .blurb {
+                font-size: 12px;
+            }
+        }
+        
     }
 
     .ribbon.half {
+        height: auto;
+        .textInner {
+            padding: 2em;
+        }
         .image {
             display: none;
         }
         .text {
+            width: 100%;
+        }
+        .title {
+            font-size: 1rem;
+            margin-bottom: 0;
+        }
+
+        p {
+            font-size: 12px;
+        }
+
+        .caption {
+            margin-top: 0;
+        }
+    }
+
+    .button {
+        width: 140px;
+        padding: 0.85em .65em;
+    }
+
+    #newsletter {
+        input[type="text"] {
             width: 100%;
         }
     }

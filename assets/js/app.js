@@ -52,8 +52,18 @@ const observer2 = new IntersectionObserver(entries => {
     })
 }, options);
 
+const regObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.intersectionRatio > 0) {
+            entry.target.classList.add("animate__animated", "animate__fadeInUp");
+        }
+    })
+})
+
 const targets = document.querySelectorAll(".animated");
 const imageTargets = document.querySelectorAll(".animatedImage");
+const noOptionTargets = document.querySelectorAll(".noOptions")
+
 
 
 targets.forEach( (target) => {
@@ -61,4 +71,7 @@ targets.forEach( (target) => {
 })
 imageTargets.forEach( (target) => {
     observer2.observe(target);
+})
+noOptionTargets.forEach( (target) => {
+    regObserver.observe(target);
 })
