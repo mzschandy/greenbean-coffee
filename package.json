@@ -5,7 +5,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
-    "build": "gulp sass",
+    "build": "gulp build",
     "preinstall": "npx npm-force-resolutions"
   },
   "author": "ZURB <foundation@zurb.com>",

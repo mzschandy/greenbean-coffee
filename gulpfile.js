@@ -10,7 +10,7 @@ var sassPaths = [
 ];
 
 const PATHS = {
-  dist: "./_build",
+  dist: "./build",
   assets: [
     "assets/**/*",
     "!assets/{scss,js}/**/*"
